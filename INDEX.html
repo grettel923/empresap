@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Titulo, y archivos de estilos  -->
+  <title>Piñera San Carlos</title>
+  <link rel="stylesheet" type="text/css" href="Styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Styles/animations.css">
+  <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+</head>
+<body>
+  <header>
+      <!-- Menú del inicio, muestra opciones inicio, productos,rutas,  contacto -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mastodon" viewBox="0 0 16 16">
+              <!-- Código para icono al lado del nombre de la empresa -->
+            <path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/>
+        </svg><i class="bi bi-mastodon">  Piñera San Carlos</i></a>
+          <!-- Opciones del menú -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rutas">Rutas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+  <!-- Componentes de pantalla principal -->
+     <div class="jumbotron" id="inicio">
+      <h1> Piñera San Carlos</h1>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img src="Imagenes/plantacion_pina.jpg" alt="Plantación de Piñas" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">Plantaciones de Piñas</h3>
+          <p class="card-text">Pital es un distrito ubicado en el cantón de San Carlos, en la provincia de Alajuela, Costa Rica. Esta región es conocida por ser una importante zona de producción de piña en el país. A continuación, te proporcionaré información general sobre las plantaciones de piña en Pital y en Costa Rica en general.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Imagenes/proceso_exportacion.jpg" alt="Proceso de Exportación" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">Proceso de Exportación</h3>
+          <p class="card-text">El proceso de exportación de Costa Rica a otros países implica una serie de pasos y requisitos. A continuación, te proporcionaré un resumen general del proceso:</br>
+          1-Registro y requisitos legales</br>
+          2-Documentación y logística: Se deben preparar los documentos necesarios para el proceso de exportación, como la factura comercial, la lista de empaque, el certificado de origen y otros documentos requeridos por el país importador </br>
+          3-Cumplimiento de regulaciones y normativas: Es esencial cumplir con las regulaciones y normativas tanto del país exportador como del país importador </br>
+          4-Trámites aduaneros: Al exportar, es necesario pasar por los trámites aduaneros en el país de origen y en el país de destino.
+          5-Transporte y seguro: Se debe organizar el transporte de los productos hacia el país importador. Esto puede realizarse a través de diferentes medios, como transporte marítimo, aéreo o terrestre.</p>
+        </div>
+      </div>
+        <!-- Titulo de nuestros productos, incluye animación en Javascript -->
+    <section id="productos" class="animated fadeIn">
+      <div class="container">
+         <div class="card">
+        <img src="Imagenes/nuestros_productos.jpg" alt="Plantación de Piñas" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">Nuestros Productos</h3>    
+        </div>
+      </div>
+       <!-- Carousel, con imagenes e información de las piñas, tambien incluye una libreria en javascript, que le permite la animación de moverse de un lado a otro -->  
+        <div id="carouselProductos" class="carousel slide" data-ride="carousel" style="text-align: center;display: flex;justify-content: center;align-items: center;">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselProductos" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselProductos" data-slide-to="1"></li>
+            <li data-target="#carouselProductos" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active"style="height: 500px ;width: 500px;display: flex;justify-content: center;align-items: center">
+              <img src="Imagenes/piña1.jpg" class="d-block w-100" alt="Piña 1" >
+              <div class="carousel-caption">
+                <h3>Piña Dorada</h3>
+                <p>Las piñas doradas tienen un sabor dulce consistente, color dorado brillante y textura jugosa</p>
+              </div>
+            </div>
+            <div class="carousel-item"style="height: 500px ;width: 500px;">
+              <img src="Imagenes/piña2.jpg" class="d-block w-100" alt="Piña 2">
+              <div class="carousel-caption">
+                <h3>Piña Rosada</h3>
+                <p> Esta variedad es única en su especie, y se caracteriza por su jugosidad, sabor más dulce y su color rosado.</p>
+              </div>
+            </div>
+            <div class="carousel-item"style="height: 500px ;width: 500px;">
+              <img src="Imagenes/piña3.jpg" class="d-block w-100" alt="Piña 3">
+              <div class="carousel-caption">
+                <h3>Piña Mango</h3>
+                <p>Se caracteriza por su sabor y exquisito aroma, posee grandes virtudes terapéuticas y es muy rica en vitamina C.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  <!-- Titulo de la sección Rutas -->
+    <div class="container"id="rutas">
+      <div class="card">
+        <img src="Imagenes/rutas.jpg" alt="Plantación de Piñas" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">Rutas</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card border-warning ">
+            <img src="Imagenes/ruta1.jpg" alt=" Filipinas" class="card-img-top">
+            <div class="card-body"> 
+              <p class="card-text">Detalles de la ruta hacia Filipinas:</p>
+              <ul>
+                <li>Origen: Costa Rica</li>
+                <li>Destino: Filipinas</li>
+                <li>Transporte: Aéreo</li>
+                <li>Duración:38h 36m</li>
+                <li>Distancia: 16217 km</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card card border-warning ">
+            <img src="Imagenes/ruta2.jpg" alt=" Israel" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Detalles de la ruta hacia Israel:</p>
+              <ul>
+                <li>Origen: Costa Rica</li>
+                <li>Destino: Israel</li>
+                <li>Transporte: Aéreo</li>
+                <li>Duración: 12h 19m</li>
+                <li>Distancia: 12079 km</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sesión contacto, AQUI DEBEN PEGAR LO QUE ESTA EN EL DOCUMENTO TXT, Y GUARDARLO, REFRESCAR PÁGINA HTML -->
+    <section id="contacto" class="animated fadeIn">
+  <footer>
+    <!-- AQUI DEBEN PEGAR EL CÓDIGO -->
+   
+
+
+
+
+
+
+
+
+
+
+
+  </footer>
+  <!-- SCRIPTS DE JAVASCRIPT -->
+  <script src="animaticiones.js"></script>
+  <script src="Javascript/jquery.min.js"></script>
+  <script src="Javascript/bootstrap.min.js"></script>
+  <script src="Javascript/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
